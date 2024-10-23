@@ -1,0 +1,64 @@
+{
+  "rivers:" : {
+    "ILR" : [
+      {
+        "Name": "Grafton (GRFI2)",
+        "Coordinates": "38.9681, -90.4289",
+        "URL": "https://water.noaa.gov/gauges/grfi2",
+        "Current": -1,
+        "USGS": "Null",
+        "LowAction": 14.2,
+        "LowWatch": [14.2, 15.2],
+        "Normal": [14.2,18],
+        "HighWatch": 22,
+        "HighAction": 22
+      }
+    ],
+    "MOR" : [
+      {
+        "Name": "Sioux City (SSCN1)",
+        "Coordinates": "42.4858, -96.4136",
+        "URL": "https://water.noaa.gov/gauges/sscn1",
+        "Current": -1,
+        "USGS": "06486000",
+        "LowAction": 29,
+        "LowWatch": [29, 30],
+        "Normal": 29,
+        "HighWatch": [29, 30],
+        "HighAction": 30
+      }
+    ],
+    "UMR" : [
+      {
+        "Name": "St. Paul (STPM5)",
+        "Coordinates": "44.9444, -93.0881",
+        "URL": "https://water.noaa.gov/gauges/stpm5",
+        "Current": -1,
+        "USGS": "05331000",
+        "Normal": 14,
+        "Watch": [14,17],
+        "Action": 17
+      },
+      {
+        "Name": "Alma (ALMW3)",
+        "Coordinates": "44.3240, -91.9185",
+        "URL": "https://water.noaa.gov/gauges/almw3",
+        "Current": -1,
+        "USGS": "Null",
+        "Normal": 14,
+        "Watch": [14,17],
+        "Action": 17
+      },
+      {
+        "Name": "Minnesota City (MSCM5)",
+        "Coordinates": "44.1595, -91.8100",
+        "URL": "https://water.noaa.gov/gauges/mscm5",
+        "Current": -1,
+        "USGS": "Null",
+        "Normal": 665,
+        "Watch": [665,667],
+        "Action": 667
+      }
+    ]
+  }
+}
