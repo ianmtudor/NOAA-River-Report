@@ -1,4 +1,4 @@
-# NOAA-River-Data
+# NOAA-River-Report Application
 A web scraper to automate report generation
 
 For installation on a Debian or Ubuntu Linux, you can do so with the system package manager:
