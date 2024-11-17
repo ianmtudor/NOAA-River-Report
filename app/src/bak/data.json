@@ -1,0 +1,106 @@
+{
+  "river" : {
+    "ILR" : [
+      {
+        "Zone": 1,
+        "Gauge": "Grafton (GRFI2)",
+        "URL": "https://water.noaa.gov/gauges/grfi2",
+        "Mile Markers": [0.0, 9.9],
+        "Low Action": 14.2,
+        "Low Watch": [14.2, 15.2],
+        "Normal": [15.2, 18],
+        "High Watch": [18, 22],
+        "High Action": 22
+      },
+      {
+        "Zone": 2,
+        "Gauge": "Hardin (HARI2)",
+        "URL": "https://water.noaa.gov/gauges/hari2",
+        "Mile Markers": [10.0, 49.9],
+        "Low Action": 18.1,
+        "Low Watch": [18.1, 19],
+        "Normal": [19, 25],
+        "High Watch": [25, 33],
+        "High Action": 33
+      },
+      {
+        "Zone": 3,
+        "Gauge": "Meredosia (MROI2)",
+        "URL": "https://water.noaa.gov/gauges/mroi2",
+        "Mile Markers": [50.0, 80.2],
+        "Low Action": 1,
+        "Low Watch": [1, 2],
+        "Normal": [2, 14],
+        "High Watch": [14, 23],
+        "High Action": 23
+      },
+      {
+        "Zone": 4,
+        "Gauge": "Beardstown (BEAI2)",
+        "URL": "https://water.noaa.gov/gauges/beai2",
+        "Mile Markers": [80.3, 101.9],
+        "Low Action": 7.6,
+        "Low Watch": [7.6, 9.1],
+        "Normal": [9.1, 14],
+        "High Watch": [14, 22],
+        "High Action": 22
+      },
+      {
+        "Zone": 5,
+        "Gauge": "Havana (HAVI2)",
+        "URL": "https://water.noaa.gov/gauges/havi2",
+        "Mile Markers": [102, 128.9],
+        "Low Action": 3.3,
+        "Low Watch": [3.3, 4.8],
+        "Normal": [4.8, 14],
+        "High Watch": [14, 20],
+        "High Action": 20
+      },
+      {
+        "Zone": 6,
+        "Gauge": "Copperas (COPI2)",
+        "URL": "https://water.noaa.gov/gauges/copi2",
+        "Mile Markers": [129, 145.5],
+        "Low Action": 0,
+        "Low Watch": [0, 1.5],
+        "Normal": [1.5, 13],
+        "High Watch": [13, 16.4],
+        "High Action": 16.4
+      },
+      {
+        "Zone": 7,
+        "Gauge": "Peoria (PIAI2)",
+        "URL": "https://water.noaa.gov/gauges/piai2",
+        "Mile Markers": [145.6, 187],
+        "Low Action": 10,
+        "Low Watch": [10, 11.6],
+        "Normal": [11.6, 18],
+        "High Watch": [18, 22],
+        "High Action": 22
+      }
+    ],
+    "MOR" : [
+      {
+        "Reach": "SOUIX CITY (MM 630 - 7.4.8)",
+        "Gauge": "Sioux City (SSCN1)",
+        "URL": "https://water.noaa.gov/gauges/sscn1",
+        "LowAction": 29,
+        "LowWatch": [29, 30],
+        "Normal": 29,
+        "HighWatch": [29, 30],
+        "HighAction": 30
+      }
+    ],
+    "UMR" : [
+      {
+        "Pool": 2,
+        "Gauge": "St. Paul (STPM5)",
+        "URL": "https://water.noaa.gov/gauges/stpm5",
+        "Normal": 14,
+        "Watch": [14,17],
+        "Action": 17,
+        "Lock Closure": "116KCFS"
+      }
+    ]
+  }
+}
