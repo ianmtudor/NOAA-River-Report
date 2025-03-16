@@ -1,0 +1,5 @@
+2025-03-16 13:42:04,000 - WARNING - No 'ObservedPrimary' value found at https://water.noaa.gov/gauges/miam7
+2025-03-16 13:42:04,001 - WARNING - Could not retrieve data for Miami (MIAM7) https://water.noaa.gov/gauges/miam7
+2025-03-16 13:42:07,819 - WARNING - No 'ObservedPrimary' value found at https://water.noaa.gov/gauges/sclm7
+2025-03-16 13:42:07,820 - WARNING - Could not retrieve data for St. Charles (SCLM7) https://water.noaa.gov/gauges/sclm7
+2025-03-16 13:42:07,834 - INFO - MOR PDF report generated successfully.

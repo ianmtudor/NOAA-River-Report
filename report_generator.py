@@ -140,10 +140,79 @@ def create_pdf_report(report_data, filename):
         ('WORDWRAP', (0, 0), (-1, -1), True),
         ('ALIGN', (0, 0), (1, -1), 'LEFT'),
     ]))
+    
+    # color highlight based on current value
+    for r, row in enumerate(data[1:], 1):  # Skip header row
+        
+        if row == [''] * len(headers):  # Skip separator rows
+            continue
+        
+        current_str = row[7]  # Current Level column
+        
+        if current_str != "No Data" and current_str.strip():  # Ensure not empty
+            try:
+                # logging.debug(f"Row {r}: Current={current}, LowAction={row[2]}, LowWatch={row[3]}, Normal={row[4]}, HighWatch={row[5]}, HighAction={row[6]}")
+                if current_str == 'No Data':
+                    continue
+                current = float(current_str)
+                if row[2]: # 'Low Action' column
+                    low_action = float(row[2])
+                else: 
+                    low_action = None
+                if row[3]: # 'Low Watch' column
+                    low_watch = row[3].split(' - ')
+                    low_watch = float(low_watch[1])
+                else:
+                    low_watch = None
+                
+                if row[4]: # normal column
+                    if len(row[4]) <= 5:
+                        normal = float(row[4])
+                    else:
+                        normal = row[4].split(' - ')
+                        normal = float(normal[1])
+                
+                if row[5]: # high watch column
+                    high_watch = row[5].split(' - ')
+                    high_watch = float(high_watch[1])
+                
+                if row[6]: # high action column
+                    high_action = float(row[6])
 
+                # Check thresholds and highlight the corresponding column
+                if low_action and current <= low_action:
+                    table.setStyle([('BACKGROUND', (2, r), (2, r), colors.red)])  # Red for 'Low Action'
+                    # logging.info(f"Row {r}: Applied Red to Low Action - Current={current} <= LowAction={low_action}")
+                    
+                elif low_watch and current <= low_watch:
+                    table.setStyle([('BACKGROUND', (3, r), (3, r), colors.yellow)])  # Yellow for 'Low Watch'
+                    
+                elif normal:
+                    if isinstance(normal, float): # check if normal is a float
+                        if current <= normal:
+                            table.setStyle([('BACKGROUND', (4, r), (4, r), colors.green)]) # Green for 'Normal'              
+                    else: # if normal is a list
+                        if current <= normal[1]:
+                            table.setStyle([('BACKGROUND', (4, r), (4, r), colors.green)]) # Green for 'Normal'
+                    # logging.info(f"Row {r}: Applied Green to Normal - Current={current}")
+                    
+                elif high_watch:
+                    if current <= high_watch:
+                        table.setStyle([('BACKGROUND', (5, r), (5, r), colors.yellow)]) # Yellow for 'High Watch'
+                        # logging.info(f"Row {r}: Applied Yellow to High Watch - Current={current} >= HighWatch={high_watch}")
+                        
+                elif high_action:
+                    if current >= high_action:
+                        table.setStyle([('BACKGROUND', (6, r), (6, r), colors.red)]) # Red for 'High Action'
+                        # logging.info(f"Row {r}: Applied Red to High Action - Current={current} >= HighAction={row[6]}")
+
+            except ValueError as e:
+                logging.warning(f"Row {r}: Failed to convert values - Current={current_str}, Error={e}")
+            
+            
     elements.append(table)
-
-    # Add strings at the bottom
+    
+    # Add note strings below the table
     elements.append(Paragraph("<br/>", normal_style))  # Space after table
     footer_text = [
         "Notes:",
