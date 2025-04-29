@@ -27,6 +27,7 @@ formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 console.setFormatter(formatter)
 logging.getLogger('').addHandler(console)
 
+
 def get_water_level(url, max_retries=3):
     """
     Fetch water level from the given URL with retry logic.
