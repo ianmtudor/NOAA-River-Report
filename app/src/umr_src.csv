@@ -1,2 +1,30 @@
-Pool,Gauge,URL,Normal,Watch,Action,Lock Closure,Current
-2,St. Paul (STPM5),https://water.noaa.gov/gauges/stpm5,14,"[14, 17]",17,116KCFS,3.35
+Pool,Gauge,URL,Mile Markers,Normal,Watch,Action,Lock Closure,Current
+2,St. Paul (STPM5),https://water.noaa.gov/gauges/stpm5,,14,"[14, 17]",17,116KCFS,0
+3,St. Paul (STPM5),https://water.noaa.gov/gauges/stpm5,,,,,125 KCFS,0
+4,Alma (ALMW3),https://water.noaa.gov/gauges/almw3,,,,,,0
+5,Minnesota City (MSCM5),https://water.noaa.gov/gauges/mscm5,,,,,,0
+5A,Winona Dam 5A (WIDM5),https://water.noaa.gov/gauges/widm5,,,,,,0
+6,Trempealaeu (TREW3),https://water.noaa.gov/gauges/trew3,,,,,,0
+7,La Crescent (LCRM5),https://water.noaa.gov/gauges/lcrm5,,,,,,0
+8,Genoa (GENW3),https://water.noaa.gov/gauges/genw3,,,,,,0
+9,Lynxville (LYNW3),https://water.noaa.gov/gauges/lynw3,,,,,,0
+10,Guttenberg (GTTI4),https://water.noaa.gov/gauges/gtti4,,,,,,0
+11,Dubuque L&D 11 (DLDI4),https://water.noaa.gov/gauges/dldi4,,,,,,0
+12,Bellvue (BLVI4),https://water.noaa.gov/gauges/blvi4,,,,,,0
+13,Fulton (FLTI2),https://water.noaa.gov/gauges/flti2,,,,,,0
+14,LeClaire (LECI4),https://water.noaa.gov/gauges/leci4,,,,,,0
+15,Rock Island (RCKI2),https://water.noaa.gov/gauges/rcki2,,,,,,0
+16,Illinois City (ILNI2),https://water.noaa.gov/gauges/ilni2,,,,,,0
+17,New Boston (NBOI2),https://water.noaa.gov/gauges/nboi2,,,,,,0
+18,Gladstone (GLDI2),https://water.noaa.gov/gauges/gldi2,,,,,,0
+19,Keokuk (EOKI4),https://water.noaa.gov/gauges/eoki4,,,,,,0
+20,Canton L&D 20 (CANM7),https://water.noaa.gov/gauges/canm7,,,,,,0
+21,Quincy L&D 21 (QLDI2),https://water.noaa.gov/gauges/qldi2,,,,,,0
+22,Saverton L&D 22 (SVRM7),https://water.noaa.gov/gauges/svrm7,,,,,,0
+24,Clarksville L&D 24 (CLKM7),https://water.noaa.gov/gauges/clkm7,,,,,,0
+25,Winfield L&D 25 (CAGM7),https://water.noaa.gov/gauges/cagm7,,,,,,0
+26,Mel Price (Alton) L&D (ALNI2),https://water.noaa.gov/gauges/alni2,,,,,,0
+27,St. Louis (EADM7),https://water.noaa.gov/gauges/eadm7,,,,,,0
+28,St. Louis (EADM7),https://water.noaa.gov/gauges/eadm7,,,,,,0
+29,St. Louis (EADM7),https://water.noaa.gov/gauges/eadm7,,,,,,0
+28/29,St. Louis (EADM7),https://water.noaa.gov/gauges/eadm7,,,,,,0

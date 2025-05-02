@@ -1,21 +1,21 @@
 Reach,Gauge,URL,LowAction,LowWatch,Normal,HighWatch,HighAction,Current
-SOUIX CITY (MM 630-734.8),Sioux City (SSCN1),https://water.noaa.gov/gauges/sscn1,,,29,"[29, 30]",30,0
-SOUIX CITY (MM 630-734.8),Omaha (OMHN1),https://water.noaa.gov/gauges/omhn1,,,26,"[26, 29]",29,0
-OMAHA (MM 500-630),Omaha (OMHN1),,,,26,"[26, 29]",29,0
-OMAHA (MM 500-630),Rulu (RULN1),https://water.noaa.gov/gauges/ruln1,,,17,"[17, 20]",20,0
-ST. JOSEPH (MM 400-500),Rulu (RULN1),,,,17,"[17, 20]",20,0
-ST. JOSEPH (MM 400-500),St. Joseph (SJSM7),https://water.noaa.gov/gauges/sjsm7,,,17,"[17, 20]",20,0
-ST. JOSEPH (MM 400-500),Atchison (ATCK1),https://water.noaa.gov/gauges/atck1,,,22,"[22, 26]",26,0
-ST. JOSEPH (MM 400-500),Kansas City (KCDM7),https://water.noaa.gov/gauges/kcdm7,,,32,"[32, 35]",35,0
-KANSAS CITY (MM 300-400),Kansas City (KCDM7),,7.8,"[7.8, 8.0]",32,"[32, 35]",35,0
-KANSAS CITY (MM 300-400),Waverly (WVYM7),https://water.noaa.gov/gauges/wvym7,10,"[10.0, 10.2]","[10.2, 22]","[22, 25]",25,0
-BRUNSWICK (MM 200-300),Waverly (WVYM7),,10,"[10.0, 10.2]","[10.2, 22]","[22, 25]",25,0
-BRUNSWICK (MM 200-300),Miami (MIAM7),https://water.noaa.gov/gauges/miam7,10,,21,"[21, 25]",25,0
-BRUNSWICK (MM 200-300),Glasogow (GLZM7),https://water.noaa.gov/gauges/glzm7,,,25,"[25, 27]",27,0
-BRUNSWICK (MM 200-300),Boonville (BOZM7),https://water.noaa.gov/gauges/bozm7,6.5,"[6.5, 7.0]","[7, 21]","[21, 25]",26,0
-JEFFERSON (MM 100-200),Boonville (BOZM7),,6.5,"[6.5, 7.0]","[7, 21]","[21, 25]",26,0
-JEFFERSON (MM 100-200),Jefferson City (JFFM7),https://water.noaa.gov/gauges/jffm7,,,23,"[23, 26]",25,0
-JEFFERSON (MM 100-200),Hermann (HRNM7),https://water.noaa.gov/gauges/hrnm7,5.2,"[5.2, 6]","[6, 21]","[21, 25]",21,0
-WASHINGTON (MM 0-100),Hermann (HRNM7),,5.2,"[5.2, 6]","[6, 21]","[21, 25]",21,0
-WASHINGTON (MM 0-100),Washington (WHGM7),https://water.noaa.gov/gauges/whgm7,,,20,"[20, 26]",26,0
-WASHINGTON (MM 0-100),St. Charles (SCLM7),https://water.noaa.gov/gauges/sclm7,,,25,"[25, 27]",25,0
+SIOUX CITY (MM 630-734.8),Sioux City (SSCN1),https://water.noaa.gov/gauges/sscn1,,,28.99,29 - 29.99,30,0
+SIOUX CITY (MM 630-734.8),Omaha (OMHN1),https://water.noaa.gov/gauges/omhn1,,,25.99,26 - 29.99,29,0
+OMAHA (MM 500-630),Omaha (OMHN1),https://water.noaa.gov/gauges/omhn1,,,25.99,26 - 28.99,29,0
+OMAHA (MM 500-630),Rulo (RULN1),https://water.noaa.gov/gauges/ruln1,,,16.99,17 - 19.99,20,0
+ST. JOSEPH (MM 400-500),Rulo (RULN1),https://water.noaa.gov/gauges/ruln1,,,16.99,17 - 19.99,20,0
+ST. JOSEPH (MM 400-500),St. Joseph (SJSM7),https://water.noaa.gov/gauges/sjsm7,,,16.99,17 - 19.99,20,0
+ST. JOSEPH (MM 400-500),Atchison (ATCK1),https://water.noaa.gov/gauges/atck1,,,21.99,22 - 25.99,26,0
+ST. JOSEPH (MM 400-500),Kansas City (KCDM7),https://water.noaa.gov/gauges/kcdm7,,,31.99,32 - 34.99,35,0
+KANSAS CITY (MM 300-400),Kansas City (KCDM7),https://water.noaa.gov/gauges/kcdm7,7.79,7.80 - 7.99,31.99,32 - 34.99,35,0
+KANSAS CITY (MM 300-400),Waverly (WVYM7),https://water.noaa.gov/gauges/wvym7,9.99,10.0 - 10.19,10.2 - 22,22 - 25,25,0
+BRUNSWICK (MM 200-300),Waverly (WVYM7),https://water.noaa.gov/gauges/wvym7,9.99,10.0 - 10.19,10.2 - 21.99,22 - 25,25,0
+BRUNSWICK (MM 200-300),Miami (MIAM7),https://water.noaa.gov/gauges/miam7,,,20.99,21 - 24.99,25,0
+BRUNSWICK (MM 200-300),Glasgow (GLZM7),https://water.noaa.gov/gauges/glzm7,,,24.99,25 - 26.99,27,0
+BRUNSWICK (MM 200-300),Boonville (BOZM7),https://water.noaa.gov/gauges/bozm7,6.49,6.5 - 7.0,7 - 20.99,21 - 24.99,25,0
+JEFFERSON (MM 100-200),Boonville (BOZM7),https://water.noaa.gov/gauges/bozm7,6.49,6.5 - 6.99,7 - 20.99,21 - 24.99,25,0
+JEFFERSON (MM 100-200),Jefferson City (JFFM7),https://water.noaa.gov/gauges/jffm7,,,22.99,23 - 25.99,26,0
+JEFFERSON (MM 100-200),Hermann (HRNM7),https://water.noaa.gov/gauges/hrnm7,5.19,5.2 - 5.99,6 - 20.99,21 - 25,25,0
+WASHINGTON (MM 0-100),Hermann (HRNM7),https://water.noaa.gov/gauges/hrnm7,5.19,5.2 - 5.99,6 - 20.99,21 - 25,25,0
+WASHINGTON (MM 0-100),Washington (WHGM7),https://water.noaa.gov/gauges/whgm7,,,19.99,20 - 25.99,26,0
+WASHINGTON (MM 0-100),St. Charles (SCLM7),https://water.noaa.gov/gauges/sclm7,,,24.99,25 - 26.99,27,0
