@@ -13,11 +13,12 @@ logger = logging.getLogger('noaa_river_report')
 class GeneratePDF:
     
     def create_pdf_report(report_data, river):
+        os.makedirs('reports/pdf', exist_ok=True) # ensure pdf directory exists
         now = datetime.now().strftime("%m/%d/%Y %H:%M")
         # river_name = filename.split('_')[0]
         doc = SimpleDocTemplate(
             # river_name + "_report.pdf",
-            river + "_report.pdf",
+            "reports/pdf/" + river + "_report.pdf",
             pagesize=letter,
             leftMargin=54, rightMargin=54, topMargin=36, bottomMargin=36
         )

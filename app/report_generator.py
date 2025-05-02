@@ -1,5 +1,6 @@
 import logging
 import os
+import shutil
 from datetime import datetime
 import logging.handlers
 import queue
@@ -10,10 +11,11 @@ import csv
 import re
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-from generate_pdf import GeneratePDF # from the generate_pdf.py file
+# from generate_pdf import GeneratePDF # from the generate_pdf.py file to create pdf reports
+
 
 # Configure thread-safe logging
-os.makedirs('logs/csv', exist_ok=True)
+os.makedirs('logs', exist_ok=True)
 logger = logging.getLogger('noaa_river_report')  # Unique logger name
 logger.setLevel(logging.INFO)
 log_queue = queue.Queue()  # Queue for thread-safe logging
@@ -61,7 +63,8 @@ def get_water_level(url, max_retries=3):
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
         # Robust regex to handle negative numbers and varying decimals
-        value = re.search(r'"ObservedPrimary":-?\d+\.\d{1,}', soup.prettify())
+        value = re.search(r'"ObservedPrimary":-?\d+\.\d*', soup.prettify())
+        # value = re.search(r'"ObservedPrimary":-?\d+\.\d{1,}', soup.prettify())
         if value:
             return float(value.group().split(':')[1])
         else:
@@ -144,13 +147,16 @@ def generate_reports(path, river_name):
         logger.error(f"Error processing CSV file: {e}")
         
     # TODO generate PDF reports
-    if river_name == 'mor':
-        GeneratePDF.create_pdf_report(report, river_name)
+    # if river_name == 'mor':
+    #    GeneratePDF.create_pdf_report(report, river_name)
 
 
 def make_csv(report_file, river_name, reader):
     """
-    Write the report data to a timestamped CSV file.
+    Write the report data to a timestamped CSV file and archive older CSVs.
+
+    Writes the report to a new CSV in 'reports/csv/'. Moves all older CSVs for the same
+    river to 'reports/csv/archive/', keeping only the newest CSV in 'reports/csv/'.
 
     Args:
         report_file (list): List of dictionaries containing report data.
@@ -158,19 +164,49 @@ def make_csv(report_file, river_name, reader):
         reader (csv.DictReader): CSV reader object with fieldnames.
 
     Returns:
-        None: The function writes the CSV file and logs the result.
+        None: The function writes the CSV file, moves older CSVs, and logs results.
     """
     logger.info(f"Starting CSV writing process for {river_name.upper()}")
     try:
-        os.makedirs('reports', exist_ok=True)
-        output_filename = f'reports/{river_name}_{datetime.now().strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv'
+        # os.makedirs('reports/csv', exist_ok=True)
+        os.makedirs('reports/csv/archive', exist_ok=True)
+        output_filename = f'reports/csv/{river_name}_{datetime.now().strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv'
+        
+        # Write new CSV
         with report_lock:  # Ensure thread-safe file writing
             with open(output_filename, 'w', newline='') as csvfile:
                 headers = reader.fieldnames + ['Current']
                 writer = csv.DictWriter(csvfile, fieldnames=headers)
                 writer.writeheader()
                 writer.writerows(report_file)
-        logger.info(f"Success - {river_name.upper()} CSV written to {output_filename}")
+            logger.info(f"Success - {river_name.upper()} CSV written to {output_filename}")
+            
+            # Find and move older CSVs for this river
+            csv_dir = 'reports/csv/'
+            archive_dir = 'reports/csv/archive/'
+            pattern = f'{river_name}_*.csv'  # Match CSVs like 'mor_2025-05-02_12h00m00s.csv'
+            csv_files = [f for f in os.listdir(csv_dir) if f.startswith(f'{river_name}_') and f.endswith('.csv')]
+            
+            if csv_files:
+                # Sort files by creation time (newest first)
+                csv_files = sorted(
+                    [(f, os.path.getctime(os.path.join(csv_dir, f))) for f in csv_files],
+                    key=lambda x: x[1],
+                    reverse=True
+                )
+                newest_file = csv_files[0][0]  # Keep the newest file
+                logger.debug(f"Newest CSV for {river_name.upper()}: {newest_file}")
+                
+                # Move older files to archive
+                for file, _ in csv_files[1:]:  # Skip the newest
+                    src_path = os.path.join(csv_dir, file)
+                    dest_path = os.path.join(archive_dir, file)
+                    try:
+                        os.rename(src_path, dest_path)
+                        logger.info(f"Archived {river_name.upper()} CSV: {file} to {dest_path}")
+                    except OSError as e:
+                        logger.error(f"Failed to archive {file} to {dest_path}: {e}")
+            
     except Exception as e:
         logger.error(f"Failed to write CSV for {river_name.upper()}: {e}")
 
@@ -212,9 +248,9 @@ def main():
         thread.join(timeout=timeout)  # Wait up to configured timeout
         if thread.is_alive():
             logger.error(f"Thread for river {river.upper()} timed out")
-
-    # Stop logging listener and ensure buffers are flushed
-    listener.stop()
+    
+    listener.stop()  # Stop logging listener and ensure buffers are flushed
+    log_queue.join()  # Wait for queue to empty
     logging.shutdown()
 
 
