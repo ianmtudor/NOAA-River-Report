@@ -11,7 +11,6 @@ import csv
 import re
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-# from generate_pdf import GeneratePDF # from the generate_pdf.py file to create pdf reports
 
 
 # Configure thread-safe logging
@@ -145,10 +144,6 @@ def generate_reports(path, river_name):
             make_csv(report, river_name, reader)
     except csv.Error as e:
         logger.error(f"Error processing CSV file: {e}")
-        
-    # TODO generate PDF reports
-    # if river_name == 'mor':
-    #    GeneratePDF.create_pdf_report(report, river_name)
 
 
 def make_csv(report_file, river_name, reader):
