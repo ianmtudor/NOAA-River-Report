@@ -11,7 +11,7 @@ import csv
 import re
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-# from generate_pdf import GeneratePDF # from the generate_pdf.py file to create pdf reports
+from generate_pdf import GeneratePDF # from the generate_pdf.py file to create pdf reports
 
 
 # Configure thread-safe logging
@@ -64,7 +64,6 @@ def get_water_level(url, max_retries=3):
         soup = BeautifulSoup(response.text, 'html.parser')
         # Robust regex to handle negative numbers and varying decimals
         value = re.search(r'"ObservedPrimary":-?\d+\.\d*', soup.prettify())
-        # value = re.search(r'"ObservedPrimary":-?\d+\.\d{1,}', soup.prettify())
         if value:
             return float(value.group().split(':')[1])
         else:
@@ -140,6 +139,11 @@ def generate_reports(path, river_name):
             logger.info(f"{river_name.upper()}: {cache_hits} URL hits")
             if empty_url_count > 0:
                 logger.warning(f"Found {empty_url_count} rows with empty URLs in {river_name} report")
+
+            # remove all URLs from the reports
+            reader.fieldnames.remove('URL')
+            for row in report:
+                row.pop('URL')
             
             # Write report to CSV; rely on make_csv for logging
             make_csv(report, river_name, reader)
@@ -148,7 +152,7 @@ def generate_reports(path, river_name):
         
     # TODO generate PDF reports
     # if river_name == 'mor':
-    #    GeneratePDF.create_pdf_report(report, river_name)
+    GeneratePDF.create_pdf_report(report, river_name)
 
 
 def make_csv(report_file, river_name, reader):
@@ -168,14 +172,13 @@ def make_csv(report_file, river_name, reader):
     """
     logger.info(f"Starting CSV writing process for {river_name.upper()}")
     try:
-        # os.makedirs('reports/csv', exist_ok=True)
         os.makedirs('reports/csv/archive', exist_ok=True)
         output_filename = f'reports/csv/{river_name}_{datetime.now().strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv'
         
         # Write new CSV
         with report_lock:  # Ensure thread-safe file writing
             with open(output_filename, 'w', newline='') as csvfile:
-                headers = reader.fieldnames + ['Current']
+                headers = reader.fieldnames
                 writer = csv.DictWriter(csvfile, fieldnames=headers)
                 writer.writeheader()
                 writer.writerows(report_file)

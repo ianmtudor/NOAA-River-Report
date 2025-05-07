@@ -1,8 +1,8 @@
 Zone,Gauge,URL,Mile Markers,Low Action,Low Watch,Normal,High Watch,High Action,Current
-1,Grafton (GRFI2),https://water.noaa.gov/gauges/grfi2,"[0.0, 9.9]",14.2,"[14.2, 15.2]","[15.2, 18]","[18, 22]",22.0,0
-2,Hardin (HARI2),https://water.noaa.gov/gauges/hari2,"[10.0, 49.9]",18.1,"[18.1, 19]","[19, 25]","[25, 33]",33.0,0
-3,Meredosia (MROI2),https://water.noaa.gov/gauges/mroi2,"[50.0, 80.2]",1.0,"[1, 2]","[2, 14]","[14, 23]",23.0,0
-4,Beardstown (BEAI2),https://water.noaa.gov/gauges/beai2,"[80.3, 101.9]",7.6,"[7.6, 9.1]","[9.1, 14]","[14, 22]",22.0,0
-5,Havana (HAVI2),https://water.noaa.gov/gauges/havi2,"[102, 128.9]",3.3,"[3.3, 4.8]","[4.8, 14]","[14, 20]",20.0,0
-6,Copperas (COPI2),https://water.noaa.gov/gauges/copi2,"[129, 145.5]",0.0,"[0, 1.5]","[1.5, 13]","[13, 16.4]",16.4,0
-7,Peoria (PIAI2),https://water.noaa.gov/gauges/piai2,"[145.6, 187]",10.0,"[10, 11.6]","[11.6, 18]","[18, 22]",22.0,0
+1,Grafton (GRFI2),https://water.noaa.gov/gauges/grfi2,0.0 - 9.9,14.2,14.2 - 15.2,15.2 - 18,18 - 22,22,0
+2,Hardin (HARI2),https://water.noaa.gov/gauges/hari2,10.0 - 49.9,18.1,18.1 - 19,19 - 25,25 - 33,33,0
+3,Meredosia (MROI2),https://water.noaa.gov/gauges/mroi2,50.0 - 80.2,1,1 - 2,2 - 14,14 - 23,23,0
+4,Beardstown (BEAI2),https://water.noaa.gov/gauges/beai2,80.3 - 101.9,7.6,7.6 - 9.1,9.1 - 14,14 - 22,22,0
+5,Havana (HAVI2),https://water.noaa.gov/gauges/havi2,102 - 128.9,3.3,3.3 - 4.8,4.8 - 14,14 - 20,20,0
+6,Copperas (COPI2),https://water.noaa.gov/gauges/copi2,129 - 145.5,0,0 - 1.5,1.5 - 13,13 - 16.4,16.4,0
+7,Peoria (PIAI2),https://water.noaa.gov/gauges/piai2,145.6 - 187,10,10 - 11.6,11.6 - 18,18 - 22,22,0

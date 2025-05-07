@@ -1,4 +1,4 @@
-Reach,Gauge,URL,LowAction,LowWatch,Normal,HighWatch,HighAction,Current
+Reach,Gauge,URL,Low Action,Low Watch,Normal,High Watch,High Action,Current
 SIOUX CITY (MM 630-734.8),Sioux City (SSCN1),https://water.noaa.gov/gauges/sscn1,,,28.99,29 - 29.99,30,0
 SIOUX CITY (MM 630-734.8),Omaha (OMHN1),https://water.noaa.gov/gauges/omhn1,,,25.99,26 - 29.99,29,0
 OMAHA (MM 500-630),Omaha (OMHN1),https://water.noaa.gov/gauges/omhn1,,,25.99,26 - 28.99,29,0
