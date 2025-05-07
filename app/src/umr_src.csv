@@ -1,30 +1,30 @@
 Pool,Gauge,URL,Mile Markers,Normal,Watch,Action,Current
-2,St. Paul (STPM5),https://water.noaa.gov/gauges/stpm5,815.2 - 847.5,14,14 - 17,17,0
-3,St. Paul (STPM5),https://water.noaa.gov/gauges/stpm5,796.9 - 815.1,14,14 - 17,17,0
-4,Alma (ALMW3),https://water.noaa.gov/gauges/almw3,752.8 - 796.8,16,16 - 18,18,0
-5,Minnesota City (MSCM5),https://water.noaa.gov/gauges/mscm5,738.1 - 752.7,665,665 - 667,667,0
-5A,Winona Dam 5A (WIDM5),https://water.noaa.gov/gauges/widm5,728.6 - 738.0,653,653 - 655,655,0
-6,Trempealaeu (TREW3),https://water.noaa.gov/gauges/trew3,714.3 - 728.5,647,647 - 649,649,0
-7,La Crescent (LCRM5),https://water.noaa.gov/gauges/lcrm5,702.5 - 714.2,641,641 - 643,643,0
-8,Genoa (GENW3),https://water.noaa.gov/gauges/genw3,679.2 - 702.4,634,634 - 636,636,0
-9,Lynxville (LYNW3),https://water.noaa.gov/gauges/lynw3,647.9 - 679.1,625,625 - 628,628,0
-10,Guttenberg (GTTI4),https://water.noaa.gov/gauges/gtti4,615.1 - 647.8,15,15 - 18,18,0
-11,Dubuque L&D 11 (DLDI4),https://water.noaa.gov/gauges/dldi4,583.0 - 615.0,16,16 - 18,18,0
-12,Bellvue (BLVI4),https://water.noaa.gov/gauges/blvi4,556.7 - 582.9,17,17 - 19,19,0
-13,Fulton (FLTI2),https://water.noaa.gov/gauges/flti2,522.4 - 556.6,16,16 - 18,18,0
-14,LeClaire (LECI4),https://water.noaa.gov/gauges/leci4,493.3 - 522.3,11,11 - 13,13,0
-15,Rock Island (RCKI2),https://water.noaa.gov/gauges/rcki2,482.9 - 493.2,15,15 - 17,17,0
-16,Illinois City (ILNI2),https://water.noaa.gov/gauges/ilni2,457.2 - 482.8,15,15 - 17,17,0
-17,New Boston (NBOI2),https://water.noaa.gov/gauges/nboi2,437.1 - 457.1,14,14 - 16,16,0
-18,Gladstone (GLDI2),https://water.noaa.gov/gauges/gldi2,410.5 - 437.0,10,10 - 12,12,0
-19,Keokuk (EOKI4),https://water.noaa.gov/gauges/eoki4,364.2 - 410.4,16,16 - 18,18,0
-20,Canton L&D 20 (CANM7),https://water.noaa.gov/gauges/canm7,343.2 - 364.1,14,14 - 16,16,0
-21,Quincy L&D 21 (QLDI2),https://water.noaa.gov/gauges/qldi2,324.9 - 343.1,17,17 - 21.4,21.9,0
-22,Saverton L&D 22 (SVRM7),https://water.noaa.gov/gauges/svrm7,301.2 - 324.8,16,16 - 21.4,21.4,0
-24,Clarksville L&D 24 (CLKM7),https://water.noaa.gov/gauges/clkm7,273.4 - 301.1,25,25 - 29,29,0
-25,Winfield L&D 25 (CAGM7),https://water.noaa.gov/gauges/cagm7,241.4 - 273.3,26,26 - 33.8,33.8,0
-26,Mel Price (Alton) L&D (ALNI2),https://water.noaa.gov/gauges/alni2,200.5 - 241.3,21,21 - 36.5,36.5,0
-27,St. Louis (EADM7),https://water.noaa.gov/gauges/eadm7,185.5 - 200.4,38,38 - 40,40,0
-28,St. Louis (EADM7),https://water.noaa.gov/gauges/eadm7,160.1 - 185.4,20,20 - 25,25 - 30,0
-29,St. Louis (EADM7),https://water.noaa.gov/gauges/eadm7,109.9 - 160.0,20,20 - 25,,0
-28/29,St. Louis (EADM7),https://water.noaa.gov/gauges/eadm7,185.4 - 109.8,0,0 - 2,-2,0
+2,St. Paul (STPM5),https://water.noaa.gov/gauges/stpm5,815.2 - 847.5,13.99,14 - 16.99,17,0
+3,St. Paul (STPM5),https://water.noaa.gov/gauges/stpm5,796.9 - 815.1,13.99,14 - 16.99,17,0
+4,Alma (ALMW3),https://water.noaa.gov/gauges/almw3,752.8 - 796.8,15.99,16 - 17.99,18,0
+5,Minnesota City (MSCM5),https://water.noaa.gov/gauges/mscm5,738.1 - 752.7,664.99,665 - 666.99,667,0
+5A,Winona Dam 5A (WIDM5),https://water.noaa.gov/gauges/widm5,728.6 - 738.0,653.99,653 - 654.99,655,0
+6,Trempealaeu (TREW3),https://water.noaa.gov/gauges/trew3,714.3 - 728.5,646.99,647 - 648.99,649,0
+7,La Crescent (LCRM5),https://water.noaa.gov/gauges/lcrm5,702.5 - 714.2,640.99,641 - 642.99,643,0
+8,Genoa (GENW3),https://water.noaa.gov/gauges/genw3,679.2 - 702.4,633.99,634 - 635.99,636,0
+9,Lynxville (LYNW3),https://water.noaa.gov/gauges/lynw3,647.9 - 679.1,624.99,625 - 627.99,628,0
+10,Guttenberg (GTTI4),https://water.noaa.gov/gauges/gtti4,615.1 - 647.8,14.99,15 - 17.99,18,0
+11,Dubuque L&D 11 (DLDI4),https://water.noaa.gov/gauges/dldi4,583.0 - 615.0,15.99,16 - 17.99,18,0
+12,Bellvue (BLVI4),https://water.noaa.gov/gauges/blvi4,556.7 - 582.9,16.99,17 - 18.99,19,0
+13,Fulton (FLTI2),https://water.noaa.gov/gauges/flti2,522.4 - 556.6,15.99,16 - 17.99,18,0
+14,LeClaire (LECI4),https://water.noaa.gov/gauges/leci4,493.3 - 522.3,10.99,11 - 12.99,13,0
+15,Rock Island (RCKI2),https://water.noaa.gov/gauges/rcki2,482.9 - 493.2,14.99,15 - 16.99,17,0
+16,Illinois City (ILNI2),https://water.noaa.gov/gauges/ilni2,457.2 - 482.8,14.99,15 - 16.99,17,0
+17,New Boston (NBOI2),https://water.noaa.gov/gauges/nboi2,437.1 - 457.1,13.99,14 - 15.99,16,0
+18,Gladstone (GLDI2),https://water.noaa.gov/gauges/gldi2,410.5 - 437.0,9.99,10 - 11.99,12,0
+19,Keokuk (EOKI4),https://water.noaa.gov/gauges/eoki4,364.2 - 410.4,15.99,16 - 17.99,18,0
+20,Canton L&D 20 (CANM7),https://water.noaa.gov/gauges/canm7,343.2 - 364.1,13.99,14 - 15.99,16,0
+21,Quincy L&D 21 (QLDI2),https://water.noaa.gov/gauges/qldi2,324.9 - 343.1,16.99,17 - 21.89,21.9,0
+22,Saverton L&D 22 (SVRM7),https://water.noaa.gov/gauges/svrm7,301.2 - 324.8,15.99,16 - 21.39,21.4,0
+24,Clarksville L&D 24 (CLKM7),https://water.noaa.gov/gauges/clkm7,273.4 - 301.1,24.99,25 - 28.99,29,0
+25,Winfield L&D 25 (CAGM7),https://water.noaa.gov/gauges/cagm7,241.4 - 273.3,25.99,26 - 33.79,33.8,0
+26,Mel Price (Alton) L&D (ALNI2),https://water.noaa.gov/gauges/alni2,200.5 - 241.3,20.99,21 - 36.49,36.5,0
+27,St. Louis (EADM7),https://water.noaa.gov/gauges/eadm7,185.5 - 200.4,37.99,38 - 39.99,40,0
+28,St. Louis (EADM7),https://water.noaa.gov/gauges/eadm7,160.1 - 185.4,19.99,20 - 24.99,25 - 30,0
+29,St. Louis (EADM7),https://water.noaa.gov/gauges/eadm7,109.9 - 160.0,19.99,20 - 25,,0
+28/29,St. Louis (EADM7),https://water.noaa.gov/gauges/eadm7,185.4 - 109.8,0,-0.01 - -2,-2.01,0
